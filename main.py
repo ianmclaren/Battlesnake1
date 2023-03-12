@@ -211,7 +211,7 @@ def best_move(safe_moves, my_body, fake_board):
         #print("Best move: " + str(best_fill))
     #return best_fill
     
-    return random.choice(safe_moves)
+    return random.choice(second_order_safe_moves)
 
 def second_order_safe(moves, head, board):
     for move in moves:
